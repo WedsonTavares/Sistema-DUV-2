@@ -1,12 +1,18 @@
 # Dependencies
 node_modules/
+*/node_modules/
+**/node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+yarn.lock
 
 # Production builds
 /build
 /dist
+*/build/
+*/dist/
 
 # Environment variables
 .env
@@ -33,7 +39,7 @@ coverage/
 *.sqlite
 *.sqlite3
 
-# IDE files
+# IDE files (manter apenas .vscode do projeto)
 .idea/
 *.swp
 *.swo
@@ -50,3 +56,18 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
+
+# Arquivos de backup e temporários
+*~
+*.bak
+*.tmp
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# Outros arquivos que não devem ser versionados
+*.tgz
+*.tar.gz

@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: #f8fafc;
+  --color-foreground: #0e151b;
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+  --font-mono: var(--font-geist-mono);
+  --color-primary: #2563eb;
+  --color-primary-foreground: #fff;
+  --color-secondary: #e7eef3;
+  --color-secondary-foreground: #4e7997;
+  --color-muted: #e7eef3;
+  --color-muted-foreground: #4e7997;
+  --color-accent: #e7eef3;
+  --color-accent-foreground: #2563eb;
+  --color-destructive: #ef4444;
+  --color-border: #e5e7eb;
+  --color-input: #e5e7eb;
+  --color-ring: #2563eb33;
+  --color-card: #fff;
+  --color-card-foreground: #0e151b;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: #f8fafc;
+  --foreground: #0e151b;
+  --card: #fff;
+  --card-foreground: #0e151b;
+  --popover: #fff;
+  --popover-foreground: #0e151b;
+  --primary: #2563eb;
+  --primary-foreground: #fff;
+  --secondary: #e7eef3;
+  --secondary-foreground: #4e7997;
+  --muted: #e7eef3;
+  --muted-foreground: #4e7997;
+  --accent: #e7eef3;
+  --accent-foreground: #2563eb;
+  --destructive: #ef4444;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #2563eb33;
+  --sidebar: #fff;
+  --sidebar-foreground: #0e151b;
+  --sidebar-primary: #2563eb;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #e7eef3;
+  --sidebar-accent-foreground: #2563eb;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #2563eb33;
+}
+
+.dark {
+  --background: #18181b;
+  --foreground: #f4f4f5;
+  --card: #23272f;
+  --card-foreground: #f4f4f5;
+  --popover: #23272f;
+  --popover-foreground: #f4f4f5;
+  --primary: #2563eb;
+  --primary-foreground: #fff;
+  --secondary: #27272a;
+  --secondary-foreground: #2563eb;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #2563eb;
+  --destructive: #ef4444;
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #2563eb33;
+  --sidebar: #23272f;
+  --sidebar-foreground: #f4f4f5;
+  --sidebar-primary: #2563eb;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #27272a;
+  --sidebar-accent-foreground: #2563eb;
+  --sidebar-border: #27272a;
+  --sidebar-ring: #2563eb33;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+  }
+}
